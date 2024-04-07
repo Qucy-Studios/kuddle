@@ -82,3 +82,10 @@ export function nonNullOrDefault<T>(a: T | undefined, b: T): T {
 	}
 	return b
 }
+
+export const htmlImage = (link: string) => {
+	return `<img src="${link}" alt=""/>`
+}
+export const markdownImage = (link: string) => {
+	return `![](${encodeURI(link)})`
+}

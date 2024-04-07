@@ -4,16 +4,9 @@
     import {Icon} from "@steeze-ui/svelte-icon";
     import Copy from "$lib/components/Copy.svelte";
     import CopyButton from "$lib/components/CopyButton.svelte";
+    import {htmlImage, markdownImage} from "$lib/utils";
 
     export let result: UploadResult | null
-
-    function html() {
-        return `<img src="${result?.imageLink ?? ""}" alt=""/>`
-    }
-
-    function markdown() {
-        return `![](${result?.imageLink ?? ""})`
-    }
 </script>
 
 {#if result != null}
@@ -30,8 +23,8 @@
         <p>We've uploaded the image to your storage bucket and copied the link to your clipboard.</p>
         <div class="flex flex-row gap-2 items-center py-2">
             <CopyButton value={result.imageLink}>Copy image link</CopyButton>
-            <CopyButton value={markdown()}>Copy as Markdown</CopyButton>
-            <CopyButton value={html()}>Copy as HTML</CopyButton>
+            <CopyButton value={markdownImage(result.imageLink)}>Copy as Markdown</CopyButton>
+            <CopyButton value={htmlImage(result.imageLink)}>Copy as HTML</CopyButton>
         </div>
     </div>
 {/if}
