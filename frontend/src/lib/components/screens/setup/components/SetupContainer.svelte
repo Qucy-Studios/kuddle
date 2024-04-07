@@ -1,0 +1,3 @@
+<div class="relative min-h-full flex flex-col gap-2">
+    <slot/>
+</div>

@@ -1,0 +1,21 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "Kuddle",
+  "outputfilename": "Kuddle",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "wailsjsdir": "./frontend/src/lib",
+  "author": {
+    "name": "Shindou Mihou",
+    "email": "git@mihou.pw"
+  },
+  "info": {
+    "companyName": "Qucy Studios",
+    "productName": "Kuddle",
+    "productVersion": "1.0.0",
+    "comments": "A product of Qucy Studios for personal use."
+  },
+  "nsisType": "single"
+}

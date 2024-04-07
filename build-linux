@@ -1,0 +1,27 @@
+#!/bin/bash
+if [[ "$1" != "--skip-build" ]]; then
+    echo "Building Linux: wails build --upx"
+    wails build --upx
+fi
+
+SHOULD_BUILD=1
+for var in "$@"
+do
+  if [[ "$var" == "--skip-build" ]]; then
+    SHOULD_BUILD=0
+  fi
+done
+
+if [[ SHOULD_BUILD == 0 ]]; then
+   echo "Building Linux: wails build --upx"
+   wails build --upx
+fi
+
+echo "Creating .deb file."
+CURRENT_DIR="$PWD"
+
+if [ -d "$CURRENT_DIR/build/linux" ]; then
+  (cd "$CURRENT_DIR/build/linux" && nfpm pkg --packager deb --target .)
+else
+  echo "You are not in the right directory. Head back to the root directory where `build-linux` is located."
+fi

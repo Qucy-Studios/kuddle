@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Kuddle
+Comment=Quickest way to upload images to your S3 buckets for technical bloggers!
+Exec=kuddle %F
+Icon=kuddle
+Terminal=false
+Categories=Application;
+MimeType=application/octet-stream;
+Keywords=kuddle

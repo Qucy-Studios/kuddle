@@ -1,0 +1,24 @@
+name: "kuddle"
+arch: "all"
+platform: "linux"
+version: "1.0.0"
+section: "default"
+priority: "extra"
+maintainer: "Qucy Studios <hello@mihou.pw>"
+description: "Kuddle"
+vendor: "Qucy Studios"
+homepage: "https://mihou.pw"
+license: "MIT"
+contents:
+  - src: ../bin/Kuddle
+    dst: /usr/bin/kuddle
+  - src: ./kuddle.desktop
+    dst: /usr/share/applications/kuddle.desktop
+  - src: ../appicon.svg
+    dst: /usr/share/icons/hicolor/scalable/apps/kuddle.svg
+  # copy icons to Yaru theme as well. For some reason Ubuntu didn't pick up fileicons from hicolor theme
+  - src: ../appicon.svg
+    dst: /usr/share/icons/Yaru/scalable/apps/kuddle.svg
+scripts:
+  postinstall: ./post.sh
+  postremove: ./post.sh
