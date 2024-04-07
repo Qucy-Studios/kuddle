@@ -10,7 +10,7 @@ vendor: "Qucy Studios"
 homepage: "https://mihou.pw"
 license: "MIT"
 contents:
-  - src: ../bin/Kuddle
+  - src: ../bin/Kuddle-linux-amd64
     dst: /usr/bin/kuddle
   - src: ./kuddle.desktop
     dst: /usr/share/applications/kuddle.desktop
