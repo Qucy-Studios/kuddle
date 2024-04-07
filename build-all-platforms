@@ -7,6 +7,8 @@ do
   fi
 done
 
+rm -rf ./build/bin
+
 if [[ $SHOULD_BUILD -eq 1 ]]; then
    echo "Building all platforms: wails build --upx"
    wails build --upx --nsis --platform=linux,windows
