@@ -14,9 +14,11 @@ To install Kuddle, simply head to our [GitHub Releases](/releases) and download 
 specific platform.
 
 ## Demo
-| Decryption                                               | Upload Images                                             |
-|----------------------------------------------------------|-----------------------------------------------------------|
-| ![image](https://blog-images.mihou.pw/kd/WPaEeBivQe.png) | ![upload](https://blog-images.mihou.pw/kd/jkad3RPxOg.png) |
+| Decryption                                                           | Upload Images                                                     |
+|----------------------------------------------------------------------|-------------------------------------------------------------------|
+| ![image](https://blog-images.mihou.pw/kd/WPaEeBivQe.png)             | ![upload](https://blog-images.mihou.pw/kd/jkad3RPxOg.png)         |
+| Successful Upload                                                    | Recent Uploads                                                    |
+| ![successful upload](https://blog-images.mihou.pw/kd/nnTrv4qKce.png) | ![recent uploads](https://blog-images.mihou.pw/kd/6fYiFt3iYW.png) |
 
 ## Compiling
 
