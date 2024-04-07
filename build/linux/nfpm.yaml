@@ -1,7 +1,7 @@
 name: "kuddle"
 arch: "all"
 platform: "linux"
-version: "1.0.1"
+version: "1.0.2"
 section: "default"
 priority: "extra"
 maintainer: "Qucy Studios <hello@mihou.pw>"
