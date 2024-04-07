@@ -13,6 +13,11 @@ simply people who frequently uploads images to their buckets to share to their b
 To install Kuddle, simply head to our [GitHub Releases](/releases) and download the latest binary for your 
 specific platform.
 
+## Demo
+| Decryption                                               | Upload Images                                             |
+|----------------------------------------------------------|-----------------------------------------------------------|
+| ![image](https://blog-images.mihou.pw/kd/WPaEeBivQe.png) | ![upload](https://blog-images.mihou.pw/kd/jkad3RPxOg.png) |
+
 ## Compiling
 
 For those who wants to compile, or contribute to the project. You  can compile Kuddle on your own machines by simply 
