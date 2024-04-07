@@ -33,6 +33,11 @@ Requirements:
 3. [`UPX`](https://upx.github.io/)
 4. [`nfpm`](https://nfpm.goreleaser.com/)
 
+> **Note!**
+>
+> For ARM Linux users, please open `build/linux/nfpm.yaml` and change the `../bin/Kuddle-linux-amd64` to `../bin/Kuddle-linux-arm64`
+> to have the `.deb` file built for your platform.
+
 To build Kuddle for yourself on Linux, simply run the following commands:
 ```shell
 git clone https://github.com/Qucy-Studios/kuddle && 
