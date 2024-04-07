@@ -81,6 +81,7 @@
                 error = err
                 return
             }
+            imageKind = "file"
             imageSrc = fileData
             return
         }
