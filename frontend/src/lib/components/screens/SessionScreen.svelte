@@ -148,7 +148,7 @@
             }
 
             let link = await Upload(session, srcPath, extension, contentType, ephemeralSettings)
-            await pushRecentUpload(session, link)
+            uploadResult = await pushRecentUpload(session, link)
             await ClipboardSetText(link)
 
             discard()
